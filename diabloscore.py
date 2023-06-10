@@ -63,16 +63,17 @@ def user_score (game):
         print("Sorry, that isn't an option")
 #------------------------------------------------------------------------------------------------
 
-for i in range(1,100):
+cont = "y"
     
-    cont=input("Quit or update review scores? ('y' to continue & 'n' to finish)")
+while cont == "y":
 
-    if cont == "y":
-        which = input("What game do you want to choose? 1, 2, 3, 4?")
-        user_score(which)
-    else:
-        updated_score()
-        break
+    which = input("What game do you want to choose? 1, 2, 3, 4?")
+    user_score(which)
+    cont = input("Would you like to change a score? (y/n)")
+   
+updated_score()
+print("Thanks for taking part")
+        
 
 
 #print(games)
