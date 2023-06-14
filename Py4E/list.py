@@ -1,3 +1,5 @@
+#Interactive shopping list, starting with a constructor form list()
+
 print("SHOPPING LIST")
 
 list = list()
